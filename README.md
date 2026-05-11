@@ -1,7 +1,7 @@
 🕷️ Transistor Party - Landing Page
 A modern, interactive landing page built for a student event/party. Designed with a dark and edgy aesthetic, featuring custom animations and a fully responsive layout to provide an engaging user experience.
 
-🔗 Live Demo
+🔗 Live Demo: https://transistorpart2.netlify.app/
 
  Features
 Dark/Light Mode Toggle: Users can switch between themes dynamically, with custom styling for every element in both modes.
