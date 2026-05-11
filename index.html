@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transistor Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Montserrat:wght@600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<div id="preloader">
+    <div class="loader-content">
+        <img src="images/logo.png" alt="Loading..." class="spinning-logo">
+    </div>
+</div>
+
+<header class="main-header">
+    <div class="header-left">
+        <img src="images/logo.png" alt="Transistor Logo" class="site-logo">
+    </div>
+
+    <div class="header-center">
+        <span class="logo-text">TRANSISTO<span id="spider-anchor">R
+            <div id="spider-container">
+                <div id="spider-thread"></div>
+                <img src="images/spider4.png" id="hanging-spider" alt="Spider">
+            </div>
+        </span></span>
+    </div>
+
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#merch">Merch</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <button id="theme-toggle" aria-label="Toggle Theme">
+                    <i id="theme-icon" class="fas fa-moon"></i>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h2 class="typing-container">
+            <span id="typed-title"></span><span class="text-cursor" id="cursor-1">|</span>
+        </h2>
+        <p class="typing-container">
+            <span id="typed-desc"></span><span class="text-cursor" id="cursor-2" style="display: none;">|</span>
+        </p>
+    </div>
+
+    <div class="scroll-gif-container" id="scroll-indicator">
+        <img src="images/scroll gif.gif" alt="Scroll Down" class="scroll-gif">
+    </div>
+</section>
+
+<div class="marquee-container">
+    <div class="marquee-text">
+        COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON... COMING SOON...
+    </div>
+</div>
+
+<section id="events" class="events-section">
+    
+    <div class="event-container">
+        <div class="event-info">
+            <h2 class="section-title">EVENT // 01</h2>
+            <p>Όραμά μας, ένα αξέχαστο φοιτητικό party. Μουσική, καλή παρέα και πολλές αναμνήσεις.</p>
+            <p><strong>Τοποθεσία:</strong> Secret Location</p>
+            <p><strong>Ημερομηνία:</strong> TBA</p>
+        </div>
+        <div class="event-poster">
+            <img src="images/spider7.png" alt="Party Poster">
+        </div>
+    </div>
+
+    <h3 class="powered-by-title">PARTY POWERED BY</h3>
+
+    <div class="event-container">
+        <div class="event-poster">
+            <img src="images/hip.png" alt="Sponsor Poster">
+        </div>
+        <div class="event-info">
+            <p>Mαζί μας στο ταξίδι το αγαπημένο cafe της πόλης!. Ανυπομονούμε να τα σπάσουμε όλα μαζί σε αυτή την αξέχαστη βραδιά με απίστευτη ενέργεια!</p>
+        </div>
+    </div>
+
+</section>
+
+<section id="merch" class="products">
+    <h2 class="section-title">MERCH</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="image-wrapper" onclick="this.classList.toggle('flipped')">
+                <img src="images/White1.avif" alt="White T-Shirt Front" class="img-front">
+                <img src="images/White2.avif" alt="White T-Shirt Back" class="img-back">
+            </div>
+            <h3>White Classic T-Shirt</h3>
+            <p class="price">15.00€</p>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper" onclick="this.classList.toggle('flipped')">
+                <img src="images/Black1.avif" alt="Black T-Shirt Front" class="img-front">
+                <img src="images/Black2.avif" alt="Black T-Shirt Back" class="img-back">
+            </div>
+            <h3>Black Classic T-Shirt</h3>
+            <p class="price">15.00€</p>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper" onclick="this.classList.toggle('flipped')">
+                <img src="images/Black11.avif" alt="Windows T-Shirt Front" class="img-front">
+                <img src="images/Black22.avif" alt="Windows T-Shirt Back" class="img-back">
+            </div>
+            <h3>Windows T-Shirt</h3>
+            <p class="price">18.00€</p>
+        </div>
+
+        <div class="product-card">
+            <div class="image-wrapper" onclick="this.classList.toggle('flipped')">
+                <img src="images/Hat1.png" alt="Hat Front" class="img-front">
+                <img src="images/Hat2.png" alt="Hat Back" class="img-back">
+            </div>
+            <h3>Transistor Hat</h3>
+            <p class="price">10.00€</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="main-footer">
+    <div class="footer-content">
+        <h2 class="section-title">GET IN TOUCH</h2>
+        <p>Θέλεις να μάθεις για το επόμενο party ή να παραγγείλεις merch;</p>
+        <div class="social-links">
+            <a href="#">INSTAGRAM</a>
+            <a href="#">EMAIL</a>
+        </div>
+        <p class="copyright">© 2026 TRANSISTOR PARTY. ALL RIGHTS RESERVED.</p>
+        <div class="creator-credits">
+            <div class="creator-avatar">
+                <img src="images/logo3.png" alt="Creator Avatar">
+            </div>
+            <p>WEBSITE MADE BY <a href="https://www.instagram.com/keros.io/" target="_blank"><span>THANASIS KEROS</span></a></p>
+        </div>
+    </div>
+</footer>
+
+<div id="insta-popup" class="popup-overlay">
+    <div class="popup-content">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <div class="popup-inner">
+            <i class="fab fa-instagram" style="font-size: 40px; color: #ffffff; margin-bottom: 15px;"></i>
+            <h3>Stay tuned for what's coming!</h3>
+            <span class="insta-handle">@transistorparty</span>
+            <a href="#" class="btn-small" style="margin-top: 20px; display: inline-block;">FOLLOW</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => document.getElementById('insta-popup').classList.add('active'), 11000);
+
+    function closePopup() {
+        document.getElementById('insta-popup').classList.remove('active');
+    }
+
+    window.onclick = function(event) {
+        const popup = document.getElementById('insta-popup');
+        if (event.target === popup) closePopup();
+    }
+
+    const titleText = "WEL\nCOME"; 
+    const descText = " Follow the spider...";
+    const titleElement = document.getElementById("typed-title");
+    const descElement = document.getElementById("typed-desc");
+    const cursor1 = document.getElementById("cursor-1");
+    const cursor2 = document.getElementById("cursor-2");
+    const scrollIndicator = document.getElementById("scroll-indicator");
+    const spiderContainer = document.getElementById("spider-container");
+
+    let i = 0, j = 0, typingFinished = false;
+
+    function typeTitle() {
+        if (i < titleText.length) {
+            titleElement.innerHTML += titleText.charAt(i);
+            i++;
+            setTimeout(typeTitle, 150);
+        } else {
+            cursor1.style.display = "none";
+            cursor2.style.display = "inline-block";
+            setTimeout(typeDesc, 500);
+        }
+    }
+
+    function typeDesc() {
+        if (j < descText.length) {
+            descElement.innerHTML += descText.charAt(j);
+            j++;
+            setTimeout(typeDesc, 50);
+        } else {
+            typingFinished = true; 
+            if (scrollIndicator) scrollIndicator.style.opacity = "1";
+            if (spiderContainer) spiderContainer.classList.add("drop");
+        }
+    }
+
+    setTimeout(typeTitle, 3200);
+
+    // Scroll Events
+    window.onscroll = function() {
+        const spider = document.getElementById("spider-container");
+        const header = document.querySelector(".main-header"); 
+        
+        if (window.scrollY > 50) {
+            if (spider) spider.classList.remove("drop");
+            if (header) header.classList.add("header-scrolled"); 
+        } else {
+            if (spider && typingFinished) spider.classList.add("drop");
+            if (header) header.classList.remove("header-scrolled");
+        }
+    };
+
+    // Theme Toggle
+    const themeToggleBtn = document.getElementById('theme-toggle');
+    const themeIcon = document.getElementById('theme-icon');
+
+    themeToggleBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        themeIcon.classList.toggle('fa-moon', !isDarkMode);
+        themeIcon.classList.toggle('fa-sun', isDarkMode);
+    });
+</script>
+
+</body>
+</html>
